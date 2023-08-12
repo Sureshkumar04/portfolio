@@ -201,13 +201,7 @@ nav ul li a:hover::after{
     left: 0;
 }
 
-.homeContent a{
-    cursor: pointer;
-    
-}
-
 .resumeBtn{
-    cursor: pointer;
     margin-top: 4vmin;
     border: 0;
     outline: 0;
@@ -215,6 +209,10 @@ nav ul li a:hover::after{
     color: white;
     padding: 1.2vmin 3.3vmin;
     background-color: #752092;
+}
+
+.resumeBtn:hover{
+    background-color: green;
 }
 
 
@@ -697,6 +695,7 @@ footer p{
         flex-direction: column;
         position: absolute;
         left: 0;
+        display: none;
         opacity: 0;
         width: 100vw;
         top: 45px;
@@ -715,6 +714,7 @@ footer p{
     }
 
     .hamShow{
+        display: flex;
         opacity: 1;
     }
 
@@ -800,6 +800,7 @@ footer p{
 
     .home{
         margin-top: 1rem;
+        justify-content: start;
     }
 
     header{
@@ -867,7 +868,11 @@ footer p{
         grid-template-columns: repeat(4,minmax(40px, 1fr));
      }
 
-
+     .contactContent ul li a i{
+        font-size: 5vmin;
+        width: 8.2vmin;
+        height: 8.2vmin;
+     }
 
 
 }
