@@ -38,7 +38,6 @@ html{
 header{
     display: flex;
     justify-content: space-between;
-    margin: 3vmin 7vmin;
     background-color: var(--primary);
     position: fixed;
     width: 100vw;
@@ -49,11 +48,17 @@ header{
 
 .title{
     cursor: pointer;
+    margin-left: 5vmin;
+}
+
+nav{
+    margin-right: 9vmin;
 }
 
 .title h2 span {
     color: var(--green);
 }
+
 
 nav ul{
     display: flex;
@@ -196,20 +201,23 @@ nav ul li a:hover::after{
     left: 0;
 }
 
-.resumeBtn{
-    margin-top: 2rem;
-    border: 0;
-    outline: 0;
+.homeContent a{
     cursor: pointer;
-    background-color: transparent;
+    
 }
 
-.resumeBtn a{
-    padding: 8px 30px;
+.resumeBtn{
+    cursor: pointer;
+    margin-top: 4vmin;
+    border: 0;
+    outline: 0;
+    background: transparent;
     color: white;
+    padding: 1.2vmin 3.3vmin;
     background-color: #752092;
-    letter-spacing: 1px;
 }
+
+
 
 /* --------------------------------Skills Section------------------------------- */
 
@@ -564,7 +572,7 @@ footer{
 }
 
 footer p{
-    font-size: 2.5vmin;
+    font-size: 2.3vmin;
     font-weight: 300;
     grid-column: 1 / span 2;
 }
@@ -576,7 +584,7 @@ footer p{
 }
 
 .address p, .links p{
-    font-size: 2.5vmin;
+    font-size: 2.2vmin;
     font-weight: 300;
 }
 
@@ -640,12 +648,22 @@ footer p{
 
 @media (max-width: 767px){
 
+    .title{
+        cursor: pointer;
+        margin-left: 0vmin;
+    }
+    
+    nav{
+        margin-right: 0vmin;
+    }
+    
+
     header{
         margin: 0;
     }
 
     header .title{
-        margin-left: 6vmin;
+        margin-left: 3vmin;
     }
 
     header nav button{
@@ -745,6 +763,7 @@ footer p{
 
     .carPrediction img, .swahili img{
         width: 90vmin;
+        margin-bottom: 1vmin;
     }
 
     .contactContent ul{
@@ -791,6 +810,16 @@ footer p{
         padding: 0.8rem 1rem 0;
         z-index: 999;
     }
+
+
+    header .title{
+        margin-left: 1vmin;
+    }
+
+    header nav button{
+        margin-right: 2.5vmin;
+    }
+
 
     .skills{
         margin-top: 8vmin;
