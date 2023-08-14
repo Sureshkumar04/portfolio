@@ -21,7 +21,7 @@
 
 body{
     background-color: var(--primary);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 html{
@@ -39,8 +39,9 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: var(--primary);
-    position: fixed;
+    position: sticky;
     width: 100vw;
+    height: auto;
     padding-top: 1rem;
     top: 0;
     z-index: 2000;
@@ -375,7 +376,7 @@ nav ul li a:hover::after{
 /* --------------------------------Project Section------------------------------- */
 
 .project{
-    height: 100vh;
+    height: auto;
 }
 
 
@@ -486,9 +487,9 @@ nav ul li a:hover::after{
 }
 
 .contactContent ul{
-    display: flex;
-    gap: 15vmin;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
+    gap: 5vmin;
 }
 
 .contactContent ul li{
@@ -732,7 +733,6 @@ footer p{
     }
 
     .education{
-        margin-top: 45vmin;
         height: auto;
     }
 
@@ -805,9 +805,7 @@ footer p{
 
     header{
         margin: 0;
-        position: sticky;
         background-color: var(--primary);
-        top: 0;
         padding: 0.8rem 1rem 0;
         z-index: 999;
     }
